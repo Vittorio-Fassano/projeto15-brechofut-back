@@ -26,3 +26,4 @@ try {
 //collections
 export const usersCollection = db.collection("users");
 export const sessionsCollection = db.collection("sessions");
+export const anunciosCollection = db.collection("anuncios");
