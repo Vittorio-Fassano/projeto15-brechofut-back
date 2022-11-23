@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(authRouter);
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
     console.log(chalk.bold.green(`Server running in port: ${port}`))
