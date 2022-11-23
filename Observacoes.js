@@ -15,5 +15,7 @@
 05)link do deploy do banco de dados:
 MONGO_URI = mongodb+srv://root:root@brechofut-cluster.nyqcn95.mongodb.net/?retryWrites=true&w=majority
 
+06)fazerNovoAnuncio feito e funcionando;
+
 */
 
