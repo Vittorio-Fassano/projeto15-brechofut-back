@@ -4,7 +4,7 @@
         ***  https://brechofut.onrender.com   ***
 
     *rota signin: https://brechofut.onrender.com
-    *rota signup: https://brechofut.onrender.com/signup
+    *rota signup: https://brechofut.onrender.com/sign-up
 
 02)Sign-up e Sign-in feitos e funcionando;
 
