@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 
 import authRouter from './routes/authRouter.js';
 import renderAnuncios from './routes/anunciosRouter.js';
+import renderCarrinho from './routes/carrinhoRouter.js';
 
 dotenv.config();
 
@@ -15,6 +16,8 @@ app.use(express.json());
 
 app.use(authRouter);
 app.use(renderAnuncios);
+app.use(renderCarrinho);
+
 
 const port = process.env.PORT || 5000;
 
