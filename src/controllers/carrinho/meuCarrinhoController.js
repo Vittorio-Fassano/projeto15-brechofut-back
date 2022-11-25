@@ -6,7 +6,6 @@ export async function meuCarrinho(req, res) {
     try {
         const findCarrinho = await carrinhoCollection.find({comprador: user.name}).toArray();
         if (!findCarrinho) { return res.sendStatus(404) };
-        console.log(findCarrinho);
 
         res.status(200).send(findCarrinho);
     } catch (err) {
