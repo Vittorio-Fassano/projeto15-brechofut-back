@@ -4,7 +4,6 @@ import {anunciosCollection} from "../../database/db.js";
 
 export async function novoAnuncioControll (req, res) {
     const {value, description, image} = req.body 
-
     const {user} = res.locals;
 
     try {

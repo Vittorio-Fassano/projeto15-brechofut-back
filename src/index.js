@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 
 import authRouter from './routes/authRouter.js';
-import novoAnuncio from './routes/anunciosRouter.js';
+import renderAnuncios from './routes/anunciosRouter.js';
 
 dotenv.config();
 
@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use(authRouter);
-app.use(novoAnuncio);
+app.use(renderAnuncios);
 
 const port = process.env.PORT || 5000;
 
