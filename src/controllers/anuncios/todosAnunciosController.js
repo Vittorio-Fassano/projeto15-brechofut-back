@@ -1,16 +1,15 @@
-import {anunciosCollection} from "../../database/db.js";
+import { anunciosCollection } from "../../database/db.js";
 
 export async function todosAnuncios(req, res) {
-    const { user } = res.locals;
-    
-    try {
-        const anuncios = await anunciosCollection.find().toArray();
+  const { user } = res.locals;
 
-        res.status(200).send(anuncios);
+  try {
+    const anuncios = await anunciosCollection.find().toArray();
 
-    } catch (error) {
-        console.log(error);
-        res.sendStatus(500);
-        return;
-    }
+    res.status(200).send(anuncios);
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(500);
+    return;
+  }
 }
